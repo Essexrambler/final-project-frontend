@@ -1,0 +1,12 @@
+<section>
+  <h1>Users Show</h1>
+  <ul>
+    <a ui-sref="usersShow({ id: user.id })">
+    <li ng-repeat="user in usersIndex.all">
+      <h1>{{ user.username }}</h1>
+      <h1>{{ user.email }}</h1>
+    <button ui-sref="usersEdit({ id: usersShow.user.id })" class="button">Edit</button>
+    <button ng-click="usersShow.delete()">Delete</button>
+    </li>
+  </ul>
+</section>
