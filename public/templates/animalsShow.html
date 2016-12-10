@@ -1,0 +1,6 @@
+<section>
+  <h1>{{ animalsShow.animal }}</h1>
+
+    <button ng-if="animalsShow.animals" ui-sref="animalsEdit({ id: animalsShow.animal.id })" class="button">Edit</button>
+    <button ng-click="animalsShow.delete()">Delete</button>
+  </section>

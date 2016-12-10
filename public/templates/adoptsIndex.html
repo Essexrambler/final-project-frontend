@@ -1,0 +1,12 @@
+<section>
+  <h1>Adopt Show</h1>
+  <ul>
+    <li ng-repeat="adopt in adoptsIndex.all">
+      <a ui-sref="adoptsShow({ id: animal.id user.id })">
+        <h1>{{ adopts.adoptsanimal.adoptname }}</h1>
+      </a>
+      <button ui-sref="adoptsEdit({ id: animal.id user.id })" class="button">Edit</button>
+      <button ng-click="adoptsShow.delete()">Delete</button>
+    </li>
+  </ul>
+</section>

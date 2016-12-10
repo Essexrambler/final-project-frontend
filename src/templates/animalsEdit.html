@@ -1,0 +1,21 @@
+<section class="row">
+  <form ng-submit="animalsEdit.update()">
+    <div class="twelve columns">
+      <label>Animal Species Name</label>
+        <input type="text" name="animalname" placeholder="Species"    ng-model="animalsEdit.animal.animalname" class="u-full-width">
+        </div>
+        <div><label>Animal Location</label>
+          <input type="text" name="animalloaction" placeholder="Location"
+           ng-model="animalsEdit.animal.animallocation" class="u-full-width">
+        </div>
+        <div><label>Image</label>
+          <input type="text" name="animalimage" placeholder="Image"
+          ng-model="animalsEdit.animal.animalimage" class="u-full-width">
+        </div>
+        <div><label>Animal Gender</label>
+        <input type="text" name="animalname" placeholder="Gender"
+        ng-model="animalsEdit.animal.animalgender" class="u-full-width">
+   </div>
+    <button>Update</button>
+  </form>
+</section>

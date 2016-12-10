@@ -9,9 +9,7 @@
     <script src="/js/app.js" charset="utf-8"></script>
   </head>
   <body ng-controller="MainController as main">
-    <header class="container">
       <h1>Species Protection Agency</h1>
-      <nav>
         <ul>
           <li><a ui-sref="usersIndex" ui-sref-active="active">Users</a></li>
           <li><a ng-if="main.isLoggedIn()" ui-sref="usersNew" ui-sref-active="active">New User</a></li>

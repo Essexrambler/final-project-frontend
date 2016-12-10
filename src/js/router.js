@@ -33,7 +33,39 @@ function Router($stateProvider, $urlRouterProvider) {
     url: '/login',
     templateUrl: '/templates/login.html',
     controller: 'LoginController as login'
+  })
+  .state('animalsIndex', {
+    url: '/animals',
+    templateUrl: '/templates/animalsIndex.html',
+    controller: 'AnimalsIndexController as animalsIndex'
+  })
+  .state('animalsShow', {
+    url: '/animals/:id',
+    templateUrl: '/templates/animalsShow.html',
+    controller: 'AnimalsShowController as animalsShow'
+  })
+  .state('animalsEdit', {
+    url: '/animals/:id/edit',
+    templateUrl: '/templates/animalsEdit.html',
+    controller: 'AnimalsEditController as animalsEdit'
+  })
+  .state('adoptsIndex', {
+    url: '/adopts/:id/index',
+    templateUrl: '/templates/adoptsIndex.html',
+    controller: 'AdoptsIndexController as adoptsIndex'
+  })
+  .state('adoptsShow', {
+    url: '/adopts/:id/show',
+    templateUrl: '/templates/adoptsShow.html',
+    controller: 'AdoptsShowController as adoptsShow'
+  })
+  .state('adoptsEdit', {
+    url: '/adopts/:id/edit',
+    templateUrl: '/templates/adoptsEdit.html',
+    controller: 'AdoptsEditController as adoptsEdit'
   });
 
-  $urlRouterProvider.otherwise('/users');
+
+
+  $urlRouterProvider.otherwise('/users/');
 }

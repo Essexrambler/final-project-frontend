@@ -1,0 +1,6 @@
+<section>
+  <h1>{{ adopts.adoptsanimal.animalname }}</h1>
+
+    <button ng-if="adoptsShow.adopts" ui-sref="adoptsEdit({ id: adoptsShow.animal.id.user.id })" class="button">Edit</button>
+    <button ng-click="adoptsShow.delete()">Delete</button>
+  </section>

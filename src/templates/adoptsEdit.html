@@ -1,0 +1,17 @@
+<section class="row">
+  <form ng-submit="adoptsEdit.update()">
+    <div class="twelve columns">
+      <label>Adoption Name</label>
+        <input type="text" name="adoptname" placeholder="Adoptname"    ng-model="adoptsEdit.adopt.adoptname" class="u-full-width">
+        </div>
+        <div><label>Animal species</label>
+          <input type="text" name="animalspecies" placeholder="Species"
+           ng-model="adoptsEdit.adopt.adoptspecies" class="u-full-width">
+        </div>
+        <div><label>Amount</label>
+          <input type="text" name="adoptamount" placeholder="Amount"
+          ng-model="adoptsEdit.adopt.adoptamount" class="u-full-width">
+        </div>
+    <button>Update</button>
+  </form>
+</section>

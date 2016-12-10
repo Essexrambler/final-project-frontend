@@ -16,7 +16,7 @@ function UsersShowController(User, $state) {
   const usersShow = this;
 
 
-  usersShow.user =User.get($state.params);
+  usersShow.user = User.get($state.params);
 
   function deleteUser() {
     usersShow.user.$remove(() => {

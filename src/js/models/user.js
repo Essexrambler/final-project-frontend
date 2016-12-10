@@ -7,3 +7,4 @@ function User($resource, API_URL) {
     update: { method: 'PUT' }
   });
 }
+  
