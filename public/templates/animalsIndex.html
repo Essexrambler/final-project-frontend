@@ -3,7 +3,7 @@
   <ul>
     <li ng-repeat="animal in animalsIndex.all">
       <a ui-sref="animalsShow({ id: animal.id })">
-        <h1>{{ animal.animalname }}</h1>
+        <h1>{{ animalsIndex.animals }}</h1>
       </a>
       <button ui-sref="animalsEdit({ id: animal.id })" class="button">Edit</button>
       <button ng-click="animalsShow.delete()">Delete</button>

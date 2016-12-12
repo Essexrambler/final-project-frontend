@@ -1,6 +1,8 @@
 <section>
-  <h1>{{ adopts.adoptsanimal.animalname }}</h1>
+  <h1>{{ adoptsShow.adopts.name }}</h1>
+  <h1>{{ adoptsShow.adopts.species }}</h1>
+  <h1>{{ adoptsShow.adopts.amount }}</h1>
 
-    <button ng-if="adoptsShow.adopts" ui-sref="adoptsEdit({ id: adoptsShow.animal.id.user.id })" class="button">Edit</button>
+    <button ng-if="adoptsShow.adopts" ui-sref="adoptsEdit({ id: adoptsShow.animal.id.user.id })" ng-click="adoptsShow.edit()" class="button">Edit</button>
     <button ng-click="adoptsShow.delete()">Delete</button>
   </section>

@@ -67,5 +67,5 @@ function Router($stateProvider, $urlRouterProvider) {
 
 
 
-  $urlRouterProvider.otherwise('/users/');
+  $urlRouterProvider.otherwise('/animals/');
 }
