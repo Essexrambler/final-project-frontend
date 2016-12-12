@@ -1,6 +1,7 @@
 body {
   background-color: pink;
   text-align: center;
+  font-size: 15px;
   font-family: helvetica, sans-serif;
 }
 
@@ -8,3 +9,9 @@ img {
   max-width: 350px;
   height: 250px;
 }
+
+nav {
+  i a:hover {
+      background-color: #555;
+      color: pink;
+    }

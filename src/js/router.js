@@ -50,12 +50,12 @@ function Router($stateProvider, $urlRouterProvider) {
     controller: 'AnimalsEditController as animalsEdit'
   })
   .state('adoptsIndex', {
-    url: '/adopts/:id/index',
+    url: '/adopts',
     templateUrl: '/templates/adoptsIndex.html',
     controller: 'AdoptsIndexController as adoptsIndex'
   })
   .state('adoptsShow', {
-    url: '/adopts/:id/show',
+    url: '/adopts/:id',
     templateUrl: '/templates/adoptsShow.html',
     controller: 'AdoptsShowController as adoptsShow'
   })
@@ -67,5 +67,5 @@ function Router($stateProvider, $urlRouterProvider) {
 
 
 
-  $urlRouterProvider.otherwise('/animals/');
+  $urlRouterProvider.otherwise('/animals');
 }

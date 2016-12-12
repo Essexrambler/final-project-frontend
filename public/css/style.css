@@ -1,2 +1,2 @@
-body{background-color:pink;text-align:center;font-family:helvetica,sans-serif}img{max-width:350px;height:250px}
+body,nav{text-align:center}body{background-color:pink;font-size:15px;font-family:helvetica,sans-serif}img{max-width:350px;height:250px}nav{color:green}
 /*# sourceMappingURL=style.css.map */

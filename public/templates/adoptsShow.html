@@ -1,8 +1,12 @@
 <section>
-  <h1>{{ adoptsShow.adopts.name }}</h1>
-  <h1>{{ adoptsShow.adopts.species }}</h1>
-  <h1>{{ adoptsShow.adopts.amount }}</h1>
+  <p>Thank you for Choosing to Adopt a</p>
+  <h1>{{ adoptsShow.adopt.animal.species }}</h1>
+  <img ng-src="{{ adoptsShow.adopt.animal.image }}">
 
-    <button ng-if="adoptsShow.adopts" ui-sref="adoptsEdit({ id: adoptsShow.animal.id.user.id })" ng-click="adoptsShow.edit()" class="button">Edit</button>
-    <button ng-click="adoptsShow.delete()">Delete</button>
-  </section>
+  <h1>{{ adoptsShow.adopt.amount }}</h1>
+  <h1>{{ adoptsShow.adopt.user.username }}</h1>
+  <!-- {{ adoptsShow.adopt.username }} -->
+  <button ui-sref="animalsIndex({ id: user.id })" class="button">Animals Show</button>
+
+<!-- {{ adoptsShow.animal }} -->
+</section>

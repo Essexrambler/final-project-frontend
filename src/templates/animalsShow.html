@@ -1,12 +1,30 @@
 <section>
-  <div>
-    <p>Adopt an Animal to save for future generations</p>
+  <p>Adopt an Animal to save for future generations</p>
   <h1>{{ animalsShow.animal.species }}</h1>
   <h1>{{ animalsShow.animal.location }}</h1>
   <img ng-src="{{ animalsShow.animal.image }}"/</h1>
   <h1>{{ animalsShow.animal.gender }}</h1>
 
-    <button ng-if="animalsShow.animals" ui-sref="animalsEdit({ id: animalsShow.animal.id })" class="button">Edit</button>
-    <button ng-click="animalsShow.delete()">Delete</button>
-  </div>
-  </section>
+  {{ animalsShow.newAdoption }}
+  <form ng-submit="animalsShow.adopt()">
+    How much would you like to donate?
+
+    <label>
+      £5
+      <input type="radio" name="amount" ng-model="animalsShow.newAdoption.amount" value="5">
+    </label>
+
+    <label>
+      £10
+      <input type="radio" name="amount" ng-model="animalsShow.newAdoption.amount" value="10">
+    </label>
+
+    <label>
+      £20
+      <input type="radio" name="amount" ng-model="animalsShow.newAdoption.amount" value="20">
+    </label>
+
+    <button>Adopt</button>
+
+  </form>
+</section>

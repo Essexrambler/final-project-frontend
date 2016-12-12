@@ -11,8 +11,8 @@ function AnimalsIndexController(Animal) {
   animalsIndex.all = Animal.query();
 }
 
-AnimalsShowController.$inject = ['Animal', '$state'];
-function AnimalsShowController(Animal, $state) {
+AnimalsShowController.$inject = ['Animal', '$state', 'Adopt'];
+function AnimalsShowController(Animal, $state, Adopt) {
   const animalsShow = this;
 
 
@@ -25,6 +25,16 @@ function AnimalsShowController(Animal, $state) {
   }
 
   animalsShow.delete = deleteAnimal;
+
+  animalsShow.newAdoption = { animal_id: $state.params.id };
+
+  function adoptAnimal() {
+    Adopt.save(animalsShow.newAdoption, (adopt) => {
+      $state.go('adoptsShow', { id: adopt.id });
+    });
+  }
+
+  animalsShow.adopt = adoptAnimal;
 }
 
 AnimalsEditController.$inject = ['Animal', '$state'];

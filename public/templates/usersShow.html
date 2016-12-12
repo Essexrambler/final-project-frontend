@@ -4,5 +4,5 @@
 
 
   <button ng-if="usersShow.isLoggedIn()" ui-sref="usersEdit({ id: usersShow.user.id })" class="button">Edit</button>
-  <button ng-click="usersShow.delete()">Delete</button>
+  <button ng-if="userShow.isLoggedIn()" ui-sref="userDelete({ id: userShow.user.id })" ng-click="usersShow.delete.user.id()" class"button">Delete</button>
 </section>

@@ -7,16 +7,55 @@
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/vendor.js" charset="utf-8"></script>
     <script src="/js/app.js" charset="utf-8"></script>
-  </head>
-      <body ng-controller="MainController as main">
-      <h1>Species Protection Agency</h1>
-        <p>For a future where people and Nature Thrive</p>
+  </head
+    <body ng-controller="MainController as main">
+  <header>
+    <nav class="navbar navnar-light bg-faded">
+      <div class="container">
+        <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+          <ul class="nav navbar-nav">
           <ul>
-          <li><a ui-sref="register" ui-sref-active="active">Register</a></li>
-          <li ng-if="!main.isLoggedIn()"><a ui-sref="login" ui-sref-active="active">Login</a></li>
+          <li class ="nav-item"><a ui-sref="usersIndex" ui-sref-active="active">Users Index</a></li>
+          <li class ="nav-item"><a ui-sref="animalsIndex" ui-sref-active="active">Animals Index</a></li>
+          <li class="nav-item"><a ui-sref="register" ui-sref-active="active">Register</a></li>
+          <li class="nav-item" ng-if="!main.isLoggedIn()"><a ui-sref="login" ui-sref-active="active">Login</a></li>
         </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
     </header>
     <main class="container" ui-view>
     </main>
     </body>
+    <div>
+    <h1>Species Protection Agency</h1>
+      <p>For a future where people and Nature Thrive</p>
+    </div>
 </html>
+
+<!-- <nav class="navbar navbar-light bg-faded">
+        <div class="container">
+          <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <a ui-sref="index">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a ui-sref="requestsIndex">Your Requests</a>
+              </li>
+              <li class="nav-item">
+                <a ui-sref="itemsNew">List an Item</a>
+              </li>
+              <li class="nav-item">
+                <a ui-sref="itemsNew">Account</a>
+              </li>
+              <li class="nav-item">
+                <a ui-sref="itemsNew">Browse</a>
+              </li>
+                <li class="nav-item">Logout</li>
+                <li class="nav-item"></li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
