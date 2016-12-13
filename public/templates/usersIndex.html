@@ -1,12 +1,16 @@
-<section>
+<section class="usersIndexSection">
   <h1>Users Show</h1>
   <ul>
+    <div class="users-index-container">
     <div ng-repeat="user in usersIndex.all">
+      <ul class="animalsIndexList">
       <a ui-sref="usersShow({ id: user.id })">
         <h1>{{ user.username }}</h1>
         <h1>{{ user.email }}</h1>
       </a>
       <button ui-sref="animalsIndex ({ id: user.id })" class="button">Animals Show</button>
+    </ul>
     </div>
+  </div>
   </ul>
 </section>

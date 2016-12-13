@@ -3,22 +3,40 @@ body {
   text-align: center;
   font-size: 15px;
   font-family: helvetica, sans-serif;
-  text-shadow: 3px;
+  color: white;
+  text-shadow: 2px 2px 3px #000000;
 }
+
+
+.button {
+    background-color: #50d07d; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+}
+
 
 img {
   max-width: 350px;
   height: 250px;
   border-color: pink;
   padding-top: 10px;
-  
 }
 
-
-.user-show-heading {
-  color: red;
-}
 .usersShowList {
-  background-color: #b2cecf;
+  background-color: #F89834;
+  list-style: none;
+}
+
+.nav-item {
+  font-color: #F89834;
+}
+
+.animalsIndexList {
+  background-color: #F89834;
   list-style: none;
 }
