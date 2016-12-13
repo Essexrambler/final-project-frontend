@@ -34,6 +34,11 @@ function Router($stateProvider, $urlRouterProvider) {
     templateUrl: '/templates/login.html',
     controller: 'LoginController as login'
   })
+  .state('logout',{
+    url: 'logout',
+    templateUrl: '/templates/logout.html',
+    controller: 'LogoutController as logout'
+  })
   .state('animalsIndex', {
     url: '/animals',
     templateUrl: '/templates/animalsIndex.html',

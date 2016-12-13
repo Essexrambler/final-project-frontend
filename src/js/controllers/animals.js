@@ -30,7 +30,7 @@ function AnimalsShowController(Animal, $state, Adopt) {
 
   function adoptAnimal() {
     Adopt.save(animalsShow.newAdoption, (adopt) => {
-      $state.go('adoptsShow', { id: adopt.id });
+      $state.go('adoptsShow', {  id: adopt.id });
     });
   }
 

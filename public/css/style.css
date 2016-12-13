@@ -1,2 +1,2 @@
-body,nav{text-align:center}body{background-color:pink;font-size:15px;font-family:helvetica,sans-serif}img{max-width:350px;height:250px}nav{color:green}
+body{background-color:#50d07d;text-align:center;font-size:15px;font-family:helvetica,sans-serif;text-shadow:3px}img{max-width:350px;height:250px;border-color:pink;padding-top:10px}.user-show-heading{color:red}.usersShowList{background-color:#b2cecf;list-style:none}
 /*# sourceMappingURL=style.css.map */

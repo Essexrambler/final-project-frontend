@@ -4,6 +4,7 @@ angular.module('finalProject')
 MainController.$inject = ['$auth', '$state', '$rootScope'];
 function MainController($auth, $state, $rootScope) {
   const main =this;
+  console.log('loaded');
 
   main.isLoggedIn = $auth.isAuthenticated;
   main.message = null;
@@ -26,6 +27,10 @@ function MainController($auth, $state, $rootScope) {
       e.preventDefault();
       main.message = 'You must be logged in to go there!';
       $state.go('login');
+    }
+
+    if ($auth.isAuthenticated()) {
+      main.currentUserId = $auth.getPayload().id;
     }
   }
   $rootScope.$on('$stateChangeStart', secureState);

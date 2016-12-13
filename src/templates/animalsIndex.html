@@ -1,12 +1,12 @@
 <section>
   <h1>Animals Show</h1>
-
     <div ng-repeat="animal in animalsIndex.all">
       <a ui-sref="animalsShow({ id: animal.id })">
+        <img ng-src="{{ animal.image }}">
         <h1>{{ animal.species }}</h1>
+        <!-- put in the animal images instead to and link to show -->
       </a>
       <button ui-sref="animalsEdit({ id: animal.id })" class="button">Edit</button>
-      <button ng-click="animalsShow.delete()">Delete</button>
+      <button ng-click="animalsShow.delete.animal()">Delete</button>
   </div>
-
 </section>
