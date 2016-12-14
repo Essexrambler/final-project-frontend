@@ -23,6 +23,7 @@ function MainController($auth, $state, $rootScope) {
     main.message = null;
     console.log(toState);
     // e.prevetDefault();
+    main.containerClass = (toState.name !== 'home') ? true : false;
     if(!$auth.isAuthenticated() && protectedStates.includes(toState.name)){
       e.preventDefault();
       main.message = 'You must be logged in to go there!';

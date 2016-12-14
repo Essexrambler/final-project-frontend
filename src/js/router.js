@@ -4,6 +4,10 @@ angular.module('finalProject')
 Router.$inject = ['$stateProvider', '$urlRouterProvider'];
 function Router($stateProvider, $urlRouterProvider) {
   $stateProvider
+  .state('home', {
+    url: '/',
+    templateUrl: '/templates/home.html'
+  })
   .state('usersIndex', {
     url: '/users',
     templateUrl: '/templates/usersIndex.html',
@@ -72,5 +76,5 @@ function Router($stateProvider, $urlRouterProvider) {
 
 
 
-  $urlRouterProvider.otherwise('/animals');
+  $urlRouterProvider.otherwise('/');
 }

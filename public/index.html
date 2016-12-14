@@ -27,14 +27,16 @@
       </div>
     </nav>
   </header>
-  <img class="img-circle" src="https://c1.staticflickr.com/3/2799/4522164759_ec3f7e78ed_o.gif">
-  <main class="container" ui-view></main>
-
   <div>
-    <h1>Species Protection Agency</h1>
-    <h2>For a future where people and Nature Thrive</h2>
+  <img class="logo" src="https://c1.staticflickr.com/3/2799/4522164759_ec3f7e78ed_o.gif">
   </div>
+  <main ng-class="{'container': main.containerClass}" ui-view></main>
 </body>
+<footer>
+  <p>SPA.Org Success stories.</p>
+  <p>Visit<a href="https://www.wwf.org.uk/success-stories">
+  SpeciesProtectionAgency@explore.com</a>.</p>
+</footer>
 </html>
 
 <!-- <nav class="navbar navbar-light bg-faded">
