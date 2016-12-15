@@ -1,18 +1,19 @@
 <section class="adoptsShowSection">
-  <div class="adopts-list">
+  <ul>
+  <li class="adopts-list">
 
     <p>Thank you for Choosing to Adopt a</p>
-    <div class="row">
-      <div class="col-sm-4" ng-repeat="adopt in adoptsIndex.all">
+
+      <!-- <li ng-repeat="adopt in adoptsIndex.all"> -->
+        <!-- <a ui-sref="adoptsShow({ id: animal.id user.id })"> -->
         <h1>{{ adoptsShow.adopt.animal.species }}</h1>
-        <div class="adopts-list-single" style="background-image:url('{{ adoptsShow.adopt.animal.image }}">
+        <img src="{{ adoptsShow.adopt.animal.image }}">
 
           <h1>{{ adoptsShow.adopt.amount }}</h1>
           <h1>{{ adoptsShow.adopt.user.username }}</h1>
 
         <button ui-sref="animalsIndex({ id: user.id })" class="button">Animals Show</button>
-      </div>
-    </div>
-  </div>
-</div>
+      </li>
+    </li>
+  </ul>
 </section>

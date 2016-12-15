@@ -7,10 +7,11 @@
     <button ng-if="userShow.isLoggedIn()" ui-sref="userDelete({ id: userShow.user.id })" ng-click="usersShow.delete.user.id()" class"button">Delete</button> -->
 
 
-    <div class="col-sm-3" ng-repeat="adoption in usersShow.user.adopts">
-        <h1>{{ animalsShow.animal }}</h1>
+    <div class="col-sm-4" ng-repeat="adoption in usersShow.user.adopts">
+
         <div class="users-list-single" style="background-image:url('{{ adoption.animal.image }}')">
         <h1>{{ adoption.amount }}</h1>
+        <h1>{{ animalsShow.animal }}</h1>
         <a ui-sref="animalsShow({id: adoption.animal.id})">{{adoption.animal.species }}</a>
         <h1>{{ adoption.animal.location }}</h1>
       </div>
@@ -18,4 +19,3 @@
   </div>
 </div>
 </section>
-<div class="col-sm-4" ng-repeat="animal in animalsIndex.all">

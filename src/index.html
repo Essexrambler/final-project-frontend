@@ -18,7 +18,7 @@
           <li class="nav-item"><a ui-sref="usersIndex" ui-sref-active="active">Users Index</a></li>
           <li class="nav-item" ng-if="main.isLoggedIn()"><a ui-sref="usersShow({id: main.currentUserId})" ui-sref-active="active">Profile</a></li>
           <li class="nav-item"><a ui-sref="animalsIndex" ui-sref-active="active">Animals Index</a></li>
-          <li class="nav-item" ng-if="!main.isLoggedIn()"><a ui-sref="register"><input type="clicked" ng-model="clicked" class="register" ui-sref-active="active">Register</a></li>
+          <li class="nav-item" ng-if="!main.isLoggedIn()"><a ui-sref="register" ng-model="clicked" class="register" ui-sref-active="active">Register</a></li>
           <li class="nav-item" ng-if="!main.isLoggedIn()"><a ui-sref="login" ui-sref-active="active">Login</a></li>
           <li class="nav-item"><a href="#" ui-sref-active="active" ng-if="main.isLoggedIn()" ng-click="main.logout()">Logout</a></li>
         </ul>
@@ -32,12 +32,6 @@
   </div>
   <main ng-class="{'container': main.containerClass}" ui-view></main>
 </body>
-<footer>
-  <p>SPA.Org Success stories.</p>
-  <p>Visit<a href="https://www.wwf.org.uk/success-stories">
-  SpeciesProtectionAgency@explore.com</a>.</p>
-</footer>
-</html>
 
 <!-- <nav class="navbar navbar-light bg-faded">
         <div class="container">

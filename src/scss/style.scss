@@ -173,5 +173,12 @@ nav.navbar {
 }
 
 footer {
-  background-color: $secondary-grey; 
+  background-color: $secondary-grey;
+}
+
+.main-login {
+  position:static;
+  z-index: 1;
+  text-align: center;
+  background-position: center;
 }
