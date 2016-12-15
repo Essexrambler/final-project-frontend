@@ -10,10 +10,13 @@
     <div class="col-sm-4" ng-repeat="adoption in usersShow.user.adopts">
 
         <div class="users-list-single" style="background-image:url('{{ adoption.animal.image }}')">
-        <h1>{{ adoption.amount }}</h1>
-        <h1>{{ animalsShow.animal }}</h1>
-        <a ui-sref="animalsShow({id: adoption.animal.id})">{{adoption.animal.species }}</a>
-        <h1>{{ adoption.animal.location }}</h1>
+          <a ui-sref="animalsShow({id: adoption.animal.id})">
+          <div class="users-list-single-text">
+            <h1>{{ adoption.amount }}</h1>
+            <h1>{{ animalsShow.animal }}</h1>
+            <h1>{{ adoption.animal.location }}</h1>
+          </div>
+        </a>
       </div>
     </div>
   </div>
